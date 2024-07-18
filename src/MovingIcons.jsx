@@ -15,7 +15,7 @@ const iconPositions = [
 
 const MovingIcons = () => {
   return (
-    <div className="container mx-auto flex justify-center items-center relative z- h-[75vh]" >
+    <div className="container mx-auto flex justify-center items-center relative  h-[75vh]" >
       <div className="container1">
         {iconPositions.map((pos, index) => (
           <div
