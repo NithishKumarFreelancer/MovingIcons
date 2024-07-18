@@ -1,4 +1,4 @@
-import "./MovingIcon.css"; // Import CSS for styles
+import "./MovingIcon.css";
 
 const iconPositions = [
   { left: "5%", top: "5vh", classname: "icon1", path: "angular.svg" },
@@ -15,8 +15,8 @@ const iconPositions = [
 
 const MovingIcons = () => {
   return (
-    <div className="container_wrapper">
-      <div className="container">
+    <div className="container mx-auto flex justify-center items-center relative z- h-[75vh]" >
+      <div className="container1">
         {iconPositions.map((pos, index) => (
           <div
             key={index}
@@ -29,6 +29,12 @@ const MovingIcons = () => {
             <img src={pos.path} alt="" />
           </div>
         ))}
+      </div>
+      <div className="container2">
+        <p>A growing library of</p>
+        <h1>1,069 apps</h1>
+        <h1>347,427 screens</h1>
+        <h1>68,140 screens</h1>
       </div>
     </div>
   );
